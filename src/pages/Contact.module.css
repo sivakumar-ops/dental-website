@@ -1,0 +1,271 @@
+.contactPage {
+  padding-top: 80px;
+}
+
+.hero {
+  padding: 6rem 0 3rem;
+  background: linear-gradient(180deg, #F8FBFF 0%, #FFFFFF 100%);
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  margin-bottom: 1.5rem;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+.mainContent {
+  padding: 6rem 0;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contactInfo {
+  position: sticky;
+  top: 120px;
+}
+
+.infoTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.infoDescription {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  margin-bottom: 3rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.infoIcon {
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.infoItem h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-dark);
+}
+
+.infoItem a {
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.infoItem a:hover {
+  color: var(--color-primary-dark);
+}
+
+.infoItem p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.formWrapper {
+  background: white;
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.875rem 1.25rem;
+  background: var(--color-bg-gray);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-dark);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all var(--transition-base);
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  background: white;
+  border-color: var(--color-primary);
+}
+
+.formGroup select {
+  cursor: pointer;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.checkboxGroup label {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  cursor: pointer;
+  user-select: none;
+}
+
+.submitButton {
+  padding: 1rem 2.5rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  align-self: flex-start;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 163, 224, 0.3);
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 163, 224, 0.4);
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.submitButton svg {
+  transition: transform var(--transition-fast);
+}
+
+.submitButton:hover:not(:disabled) svg {
+  transform: translateX(4px);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .mainContent {
+    padding: 5rem 0;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contactInfo {
+    position: static;
+  }
+
+  .formWrapper {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contactPage {
+    padding-top: 70px;
+  }
+
+  .hero {
+    padding: 4rem 0 2rem;
+  }
+
+  .mainContent {
+    padding: 4rem 0;
+  }
+
+  .formWrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .form {
+    gap: 1.25rem;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .infoList {
+    gap: 1.5rem;
+  }
+}

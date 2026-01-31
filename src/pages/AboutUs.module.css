@@ -1,0 +1,143 @@
+.aboutPage {
+  padding-top: 80px;
+}
+
+.hero {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #F8FBFF 0%, #FFFFFF 100%);
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  margin-bottom: 1.5rem;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+.mission {
+  padding: 6rem 0;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.missionCard {
+  background: white;
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.missionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.missionCard h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-dark);
+}
+
+.missionCard p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+.stats {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.statCard {
+  text-align: center;
+  padding: 2rem;
+}
+
+.statNumber {
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: 700;
+  font-family: var(--font-display);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero,
+  .mission,
+  .stats {
+    padding: 5rem 0;
+  }
+
+  .missionGrid,
+  .statsGrid {
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aboutPage {
+    padding-top: 70px;
+  }
+
+  .hero,
+  .mission,
+  .stats {
+    padding: 4rem 0;
+  }
+
+  .missionCard {
+    padding: 2rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .statCard {
+    padding: 1.5rem 1rem;
+  }
+}
