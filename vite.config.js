@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/dental-website/', // Change 'dental-website' to your repository name
   plugins: [react()],
   server: {
     port: 3000,
