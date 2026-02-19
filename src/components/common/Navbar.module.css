@@ -4,15 +4,15 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   transition: all var(--transition-base);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: var(--shadow-md);
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -44,12 +44,13 @@
 }
 
 .navLink {
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--color-text-dark);
   position: relative;
   padding: 0.5rem 0;
   transition: color var(--transition-fast);
+  letter-spacing: 0.3px;
 }
 
 .navLink::after {
@@ -84,8 +85,9 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--color-text-dark);
-  font-weight: 500;
+  font-weight: 600;
   transition: color var(--transition-fast);
+  font-size: 0.95rem;
 }
 
 .phoneLink:hover {
@@ -93,14 +95,15 @@
 }
 
 .ctaButton {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   background: var(--color-primary);
   color: white;
   border-radius: var(--radius-full);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   transition: all var(--transition-base);
   white-space: nowrap;
+  letter-spacing: 0.3px;
 }
 
 .ctaButton:hover {

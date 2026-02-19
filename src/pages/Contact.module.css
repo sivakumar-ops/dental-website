@@ -3,7 +3,7 @@
 }
 
 .hero {
-  padding: 6rem 0 3rem;
+  padding: 8rem 0 4rem;
   background: linear-gradient(180deg, #F8FBFF 0%, #FFFFFF 100%);
   text-align: center;
 }
@@ -15,6 +15,8 @@
 
 .heroTitle {
   margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .heroDescription {
@@ -24,7 +26,7 @@
 }
 
 .mainContent {
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .contentGrid {
@@ -42,6 +44,8 @@
 .infoTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .infoDescription {
@@ -122,9 +126,11 @@
 }
 
 .formGroup label {
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   color: var(--color-text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .formGroup input,
@@ -178,13 +184,13 @@
 }
 
 .submitButton {
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
   background: var(--color-primary);
   color: white;
   border: none;
   border-radius: var(--radius-full);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -193,6 +199,7 @@
   transition: all var(--transition-base);
   cursor: pointer;
   box-shadow: 0 4px 16px rgba(0, 163, 224, 0.3);
+  letter-spacing: 0.3px;
 }
 
 .submitButton:hover:not(:disabled) {

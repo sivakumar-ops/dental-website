@@ -14,7 +14,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.div
+            {/* <motion.div
               className={styles.badge}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -28,7 +28,7 @@ const Hero = () => {
                 aria-hidden="true"
               />
               <h2 className={styles.badgeText}>Award-Winning Dentist</h2>
-            </motion.div>
+            </motion.div> */}
 
             <h1 id="hero-heading" className={styles.heroTitle}>
               Experience gentle and comprehensive dentistry

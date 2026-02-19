@@ -7,7 +7,7 @@ import BookAppointment from '../components/sections/BookAppointment';
 const Home = () => {
   useEffect(() => {
     // Update page title and meta description
-    document.title = 'Dental 128 - Award-Winning Comprehensive Dentistry';
+    document.title = 'Dentovate';
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
