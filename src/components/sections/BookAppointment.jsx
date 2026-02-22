@@ -79,7 +79,7 @@ const BookAppointment = () => {
                     onChange={handleChange}
                     className={styles.input}
                     required
-                    placeholder="John Doe"
+                    placeholder=""
                   />
                 </div>
 
@@ -95,7 +95,7 @@ const BookAppointment = () => {
                     onChange={handleChange}
                     className={styles.input}
                     required
-                    placeholder="john@example.com"
+                    placeholder=""
                   />
                 </div>
               </div>
@@ -113,7 +113,7 @@ const BookAppointment = () => {
                     onChange={handleChange}
                     className={styles.input}
                     required
-                    placeholder="(555) 123-4567"
+                    placeholder=""
                   />
                 </div>
 

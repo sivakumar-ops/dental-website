@@ -86,13 +86,13 @@ const Hero = () => {
             </div>
 
             {/* Testimonial Card */}
-            <motion.div
+            {/* <motion.div
               className={styles.testimonialCard}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <p className={styles.testimonialText}>
+              {/* <p className={styles.testimonialText}>
                 "I have been a patient at Dental for several years, and I can confidently say 
                 that it is the best dental clinic I have ever visited."
               </p>
@@ -106,8 +106,8 @@ const Hero = () => {
                   />
                   <span>(5.0) 10k+ ratings on google</span>
                 </div>
-              </div>
-            </motion.div>
+              </div> 
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Contact = () => {
     document.title = 'Contact Us - Dental 128';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Get in touch with Dental 128. Book your consultation today and experience award-winning dental care.');
+      metaDescription.setAttribute('content', 'Get in touch with Dentovate. Book your consultation today and experience award-winning dental care.');
     }
   }, []);
 
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Phone</h3>
-                    <a href="tel:5005555050">(500) 555-5050</a>
+                    <a href="tel:5005555050">9133333552</a>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Email</h3>
-                    <a href="mailto:info@dental128.com">info@dental128.com</a>
+                    <a href="mailto:info@dentovate.com">info@dentovate.com</a>
                   </div>
                 </div>
 
@@ -118,7 +118,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Address</h3>
-                    <p>123 Dental Street<br />Suite 100, City, State 12345</p>
+                    <p>Plot No 81,82 Savithramma Plaza<br />Madinaguda, Miyapur, Hyderabad, Telangana 500049</p>
                   </div>
                 </div>
 
@@ -155,7 +155,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="John Doe"
+                      placeholder=""
                     />
                   </div>
 
@@ -168,7 +168,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="john@example.com"
+                      placeholder=""
                     />
                   </div>
                 </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      placeholder="(555) 123-4567"
+                      placeholder=""
                     />
                   </div>
 
