@@ -2,82 +2,121 @@
   padding-top: 80px;
 }
 
-.hero {
-  padding: 8rem 0;
+/* Main Content Section */
+.mainContent {
+  padding: 5rem 0;
   background: linear-gradient(180deg, #F8FBFF 0%, #FFFFFF 100%);
+}
+
+.contentWrapper {
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.heroContent {
-  max-width: 800px;
-  margin: 0 auto;
+.highlightedTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
 }
 
-.heroTitle {
-  margin-bottom: 1.5rem;
+.mainTextWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: justify;
+}
+
+.mainText {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--color-text-light);
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+/* What Makes Our Care Different Section */
+.differentSection {
+  padding: 6rem 0;
+  background: var(--color-bg-gray);
+}
+
+.differentHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.differentTitle {
+  font-size: 2.5rem;
   font-weight: 700;
+  color: var(--color-text-dark);
   letter-spacing: -0.5px;
 }
 
-.heroDescription {
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: var(--color-text-light);
-}
-
-.mission {
-  padding: 8rem 0;
-}
-
-.missionGrid {
+.differentGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.missionCard {
+.differentCard {
   background: white;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: var(--radius-lg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border);
   transition: all var(--transition-base);
 }
 
-.missionCard:hover {
+.differentCard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
+  border-color: #CCFF00;
 }
 
-.iconWrapper {
-  width: 80px;
-  height: 80px;
-  background: var(--color-primary-light);
+.differentIcon {
+  width: 56px;
+  height: 56px;
+  background: #f0f0f0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
-  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  color: #555555;
+  transition: all var(--transition-base);
 }
 
-.missionCard h3 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: var(--color-text-dark);
+.differentCard:hover .differentIcon {
+  background: #CCFF00;
+  color: #1A2B3C;
+}
+
+.differentCardTitle {
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: -0.3px;
+  color: var(--color-text-dark);
+  margin-bottom: 0.75rem;
 }
 
-.missionCard p {
-  font-size: 1.05rem;
+.differentCardDescription {
+  font-size: 0.95rem;
   line-height: 1.7;
   color: var(--color-text-light);
+  margin: 0;
 }
 
+/* Stats Section */
 .stats {
-  padding: 8rem 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #1A2B3C 0%, #2d4258 100%);
   color: white;
 }
 
@@ -93,49 +132,55 @@
 }
 
 .statNumber {
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: 3rem;
   font-weight: 700;
-  font-family: var(--font-display);
   margin-bottom: 0.5rem;
-  line-height: 1;
-  letter-spacing: -0.5px;
+  color: #CCFF00;
 }
 
 .statLabel {
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .hero,
-  .mission,
+  .differentSection,
   .stats {
     padding: 5rem 0;
   }
-
-  .missionGrid,
-  .statsGrid {
-    gap: 2rem;
-  }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .aboutPage {
     padding-top: 70px;
   }
 
-  .hero,
-  .mission,
+  .mainContent {
+    padding: 3rem 0;
+  }
+
+  .mainTextWrapper {
+    padding: 0 1rem;
+  }
+
+  .highlightedTitle {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .differentSection,
   .stats {
     padding: 4rem 0;
   }
 
-  .missionCard {
-    padding: 2rem;
+  .differentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .differentCard {
+    padding: 1.5rem;
   }
 
   .statsGrid {

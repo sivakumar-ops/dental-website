@@ -117,7 +117,7 @@
   gap: 0.5rem;
   padding: 0.875rem 2rem;
   background: #555555;
-  color: white;
+  color: #CCFF00;
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.95rem;
@@ -128,8 +128,10 @@
 
 .learnMoreBtn:hover {
   background: #4a4a4a;
+  color: #CCFF00;
   transform: translateY(-2px);
   gap: 0.75rem;
+  box-shadow: 0 4px 16px rgba(85, 85, 85, 0.4);
 }
 
 .cta {
@@ -163,12 +165,12 @@
   gap: 0.75rem;
   padding: 1rem 3rem;
   background: #555555;
-  color: white;
+  color: #CCFF00;
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.95rem;
   transition: all var(--transition-base);
-  box-shadow: 0 8px 24px rgba(85, 85, 85, 0.3);
+  box-shadow: 0 8px 24px rgba(85, 85, 85, 0.4);
   letter-spacing: 0.3px;
 }
 
@@ -176,6 +178,7 @@
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(85, 85, 85, 0.4);
   gap: 1rem;
+  background: #4a4a4a;
 }
 
 /* Tablet */
