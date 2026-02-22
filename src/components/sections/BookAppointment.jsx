@@ -58,11 +58,10 @@ const BookAppointment = () => {
           <div className={styles.content}>
             <div className={styles.textContent}>
               <h2 id="appointment-heading" className={styles.title}>
-                Book your appointment
+                Start Your Smile Journey
               </h2>
               <p className={styles.description}>
-                We believe in utilizing the latest advancements in dental technology to 
-                deliver high-quality care.
+                Book your consultation today and take the first step toward a healthier, more confident smile.
               </p>
             </div>
 

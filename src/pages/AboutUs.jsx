@@ -23,11 +23,9 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className={styles.heroTitle}>About Dental 128</h1>
+            <h1 className={styles.heroTitle}>About Us</h1>
             <p className={styles.heroDescription}>
-              We are dedicated to providing exceptional dental care with a personal touch. 
-              Our experienced team combines advanced technology with compassionate service 
-              to ensure every patient receives the best possible care.
+              Expert Care. Honest Approach.
             </p>
           </motion.div>
         </div>
@@ -50,10 +48,9 @@ const AboutUs = () => {
                   <path d="M16 24L22 30L34 18" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>Our Mission</h3>
+              <h3>Thoughtful Care for Every Smile</h3>
               <p>
-                To provide comprehensive, compassionate dental care that exceeds expectations 
-                and helps our patients achieve optimal oral health and beautiful smiles.
+                With Dentovate, you receive complete dental care supported by modern technology, strict hygiene protocols, and ethical treatment planning. From routine check-ups to complex procedures, we focus on comfort, clarity, and long-term oral health.
               </p>
             </motion.div>
 
@@ -70,10 +67,9 @@ const AboutUs = () => {
                   <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>Our Values</h3>
+              <h3>Transparent Communication</h3>
               <p>
-                We believe in honesty, integrity, and transparency. Every patient is treated 
-                with respect and receives personalized care tailored to their unique needs.
+                We believe clarity builds trust. From diagnosis to treatment planning and costs, everything is explained openly and honestly. Clear timelines, upfront estimates, and honest guidance help you feel confident throughout your care.
               </p>
             </motion.div>
           </div>

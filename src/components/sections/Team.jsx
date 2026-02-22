@@ -12,10 +12,10 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Tom Johnson',
-      role: 'Senior Dentist',
+      name: 'Dr. G. Vishwa Teja Rao',
+      role: 'MDS, Pediatric Dentist',
       description: 'Our administrative team is the backbone of our dental clinic.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca0e7a66134e47a85b5371_64be95985c3d42c0a9f3d911__Team%20member5%20(1)%20(1).jpeg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
       social: {
         linkedin: 'https://linkedin.com',
         twitter: 'https://twitter.com',
@@ -24,10 +24,10 @@ const Team = () => {
     },
     {
       id: 2,
-      name: 'Maria Lubin',
-      role: 'Founder & CEO',
+      name: 'Dr. Nishitha',
+      role: 'MEM, Masters in Emergency Medicine',
       description: 'Our administrative team is the backbone of our dental clinic.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca010cc17daf5c8368715e_Team%20member-1%20(1).jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
       social: {
         linkedin: 'https://linkedin.com',
         twitter: 'https://twitter.com',
@@ -36,10 +36,10 @@ const Team = () => {
     },
     {
       id: 3,
-      name: 'Corey Dokidis',
-      role: 'Senior Dentist',
+      name: 'Dr. Pooja Shanker',
+      role: 'MDS Pediatric Dentist',
       description: 'Our administrative team is the backbone of our dental clinic.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca01ae16bccc02d3968d93__Team%20member-2%20(2).jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
       social: {
         linkedin: 'https://linkedin.com',
         twitter: 'https://twitter.com',
@@ -48,10 +48,10 @@ const Team = () => {
     },
     {
       id: 4,
-      name: 'Aspen Saris',
-      role: 'Senior Dentist',
+      name: 'Dr. B. Yamini Chandra',
+      role: 'MDS Endodontist',
       description: 'Our administrative team is the backbone of our dental clinic.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca01968ad487d0a8b683ca__Team%20member-1%20(2).jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
       social: {
         linkedin: 'https://linkedin.com',
         twitter: 'https://twitter.com',

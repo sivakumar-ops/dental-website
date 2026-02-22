@@ -72,19 +72,19 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: var(--color-primary);
+  background: #555555;
   color: white;
   border-radius: var(--radius-full);
   font-weight: 600;
   font-size: 1.05rem;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 16px rgba(0, 163, 224, 0.3);
+  box-shadow: 0 4px 16px rgba(85, 85, 85, 0.3);
 }
 
 .ctaButton:hover {
-  background: var(--color-primary-dark);
+  background: #4a4a4a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 163, 224, 0.4);
+  box-shadow: 0 6px 24px rgba(85, 85, 85, 0.4);
 }
 
 .ctaButton svg {

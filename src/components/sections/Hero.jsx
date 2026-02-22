@@ -31,12 +31,11 @@ const Hero = () => {
             </motion.div> */}
 
             <h1 id="hero-heading" className={styles.heroTitle}>
-              Experience gentle and comprehensive dentistry
+              Smiles Built on Precision
             </h1>
 
             <p className={styles.heroDescription}>
-              Our experienced team of dentists and friendly staff work together to create a 
-              comfortable and welcoming environment for everyone who walks through our doors.
+              From preventive care to comprehensive advanced treatments, we blend modern dental technology with a warm, patient-first approach you can trust.
             </p>
 
             <motion.div
@@ -46,7 +45,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <Link to="/contact-us" className={styles.ctaButton}>
-                Book Consultation
+                Begin Your Dental Care
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>

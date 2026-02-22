@@ -59,10 +59,9 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className={styles.heroTitle}>We'd love to help</h1>
+            <h1 className={styles.heroTitle}>Connect with Dentovate's Dental Specialists</h1>
             <p className={styles.heroDescription}>
-              Our friendly team would love to hear from you. Book your consultation 
-              today and experience exceptional dental care.
+              Have questions or want to schedule a visit? Our expert dental team at Dentovate is here to help. Fill out the form below, and we'll respond promptly to assist you.
             </p>
           </motion.div>
         </div>

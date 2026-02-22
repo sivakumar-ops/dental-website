@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/" className={styles.logo} aria-label="Dental 128 Home">
               <svg width="140" height="40" viewBox="0 0 140 40" fill="none" aria-hidden="true">
                 <text x="0" y="28" fontFamily="var(--font-display)" fontSize="24" fontWeight="700" fill="white">
-                  Dental 128
+                  Dentovate
                 </text>
               </svg>
             </Link>
@@ -88,14 +88,14 @@ const Footer = () => {
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="currentColor"/>
                 </svg>
-                <a href="tel:5005555050">(500) 555-5050</a>
+                <a href="tel:5005555050">9133333552</a>
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M3 4C3 3.44772 3.44772 3 4 3H16C16.5523 3 17 3.44772 17 4V16C17 16.5523 16.5523 17 16 17H4C3.44772 17 3 16.5523 3 16V4Z" stroke="currentColor" strokeWidth="2"/>
                   <path d="M3 7L10 11L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <a href="mailto:info@dental128.com">info@dental128.com</a>
+                <a href="mailto:info@dental128.com">info@dentovate.com</a>
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -111,7 +111,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
           <p className={styles.copyright}>
-            © {currentYear} Dental 128. All Rights Reserved.
+            © {currentYear} Dentovate All Rights Reserved.
           </p>
           <div className={styles.legalLinks}>
             <Link to="/privacy-policy">Privacy Policy</Link>

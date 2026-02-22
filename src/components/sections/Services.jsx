@@ -13,24 +13,24 @@ const Services = () => {
     {
       id: 1,
       number: '01',
-      title: 'Preventive dentistry',
-      description: 'Regular check-ups, cleanings, and oral hygiene education to keep your teeth and gums healthy.',
+      title: 'Oral Surgery',
+      description: 'Safe surgical and simple extractions, including cystic enucleation, performed with precision and patient comfort in focus.',
       image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca128c8e27e93e7826b606_Rectangle%209%20(1).jpg',
       link: '/our-services'
     },
     {
       id: 2,
       number: '02',
-      title: 'Cosmetic dentistry',
-      description: 'Smile makeovers, teeth whitening, porcelain veneers, and more to enhance the appearance of your smile.',
+      title: 'Dental Implants',
+      description: 'Conventional and immediate-loading implants designed to restore function, aesthetics, and long-term oral stability.',
       image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64aeadb9136790cbb09e7d2c_Cosmetic%20Dentistry.jpg',
       link: '/our-services'
     },
     {
       id: 3,
       number: '03',
-      title: 'Restorative dentistry',
-      description: 'Dental implants, crowns, bridges, and dentures to restore the function and aesthetics of your teeth.',
+      title: 'Root Canal Treatment',
+      description: 'Gentle, precise procedures that relieve pain, eliminate infection, and preserve your natural tooth structure.',
       image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca12965e259ddd4b1fedfa_Rectangle%2011%20(1).jpg',
       link: '/our-services'
     }
@@ -63,10 +63,10 @@ const Services = () => {
         <div className={styles.header}>
           <div className={styles.headerText}>
             <h2 id="services-heading" className={styles.sectionTitle}>
-              Comprehensive dental services
+              Our Core Services
             </h2>
             <p className={styles.sectionDescription}>
-              We offer a wide range of dental services to address all of your oral health needs.
+              From preventive care to advanced treatments, we offer comprehensive dental solutions tailored to your needs.
             </p>
           </div>
           <Link to="/our-services" className={styles.viewAllButton}>

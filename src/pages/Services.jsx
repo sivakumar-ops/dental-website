@@ -15,66 +15,59 @@ const ServicesPage = () => {
   const allServices = [
     {
       id: 1,
-      icon: '🦷',
-      title: 'Preventive Dentistry',
-      description: 'Regular check-ups, cleanings, and oral hygiene education to keep your teeth and gums healthy.',
-      features: ['Dental Cleanings', 'Oral Examinations', 'Fluoride Treatments', 'Sealants']
+      icon: '🔪',
+      title: 'Oral Surgery',
+      description: 'Safe surgical and simple extractions, including cystic enucleation, performed with precision and patient comfort in focus.',
+      features: ['Simple Extractions', 'Surgical Extractions', 'Cystic Enucleation', 'Minimal Discomfort']
     },
     {
       id: 2,
-      icon: '✨',
-      title: 'Cosmetic Dentistry',
-      description: 'Smile makeovers, teeth whitening, porcelain veneers, and more to enhance the appearance of your smile.',
-      features: ['Teeth Whitening', 'Porcelain Veneers', 'Bonding', 'Smile Makeovers']
+      icon: '⚙️',
+      title: 'Dental Implants',
+      description: 'Conventional and immediate-loading implants designed to restore function, aesthetics, and long-term oral stability.',
+      features: ['Conventional Implants', 'Immediate-Loading', 'Implant Support', 'Long-term Solution']
     },
     {
       id: 3,
       icon: '🔧',
-      title: 'Restorative Dentistry',
-      description: 'Dental implants, crowns, bridges, and dentures to restore the function and aesthetics of your teeth.',
-      features: ['Dental Implants', 'Crowns & Bridges', 'Dentures', 'Root Canal Therapy']
+      title: 'Root Canal Treatment',
+      description: 'Gentle, precise procedures that relieve pain, eliminate infection, and preserve your natural tooth structure.',
+      features: ['Pain Relief', 'Infection Removal', 'Tooth Preservation', 'Gentle Precision']
     },
     {
       id: 4,
-      icon: '🏥',
-      title: 'General Dentistry',
-      description: 'Comprehensive oral health care for patients of all ages with personalized treatment plans.',
-      features: ['Routine Checkups', 'Cavity Fillings', 'Gum Disease Treatment', 'Oral Cancer Screening']
+      icon: '👶',
+      title: 'Pediatric Dental Care',
+      description: 'Friendly, preventive care for children, focused on healthy development and positive dental experiences.',
+      features: ['Preventive Care', 'Child-Friendly', 'Habit Guidance', 'Positive Experience']
     },
     {
       id: 5,
-      icon: '💉',
-      title: 'Dental Implants',
-      description: 'Permanent tooth replacement solution that looks, feels, and functions like natural teeth.',
-      features: ['Single Implants', 'Multiple Implants', 'All-on-4', 'Implant-Supported Dentures']
+      icon: '✨',
+      title: 'Aesthetic Dentistry',
+      description: 'Subtle cosmetic treatments that enhance your smile while preserving a natural, balanced appearance.',
+      features: ['Cosmetic Enhancement', 'Natural Look', 'Smile Balance', 'Confidence Boost']
     },
     {
       id: 6,
-      icon: '🦴',
-      title: 'Dental Surgery',
-      description: 'Surgical procedures to address complex dental issues and improve oral health.',
-      features: ['Wisdom Teeth Removal', 'Tooth Extractions', 'Bone Grafting', 'Gum Surgery']
+      icon: '👑',
+      title: 'Crowns & Bridges',
+      description: 'Durable, well-fitted restorations that improve strength, alignment, and smile harmony.',
+      features: ['Crown Placement', 'Bridge Installation', 'Durable Solution', 'Smile Harmony']
     },
     {
       id: 7,
-      icon: '🔗',
-      title: 'Teeth Braces',
-      description: 'Orthodontic treatment to straighten teeth and correct bite issues for a healthier smile.',
-      features: ['Traditional Braces', 'Clear Aligners', 'Retainers', 'Bite Correction']
+      icon: '⚡',
+      title: 'Tooth Whitening',
+      description: 'Professional whitening solutions that safely brighten your smile without damaging enamel.',
+      features: ['Safe Whitening', 'Enamel Protection', 'Even Results', 'Quick Process']
     },
     {
       id: 8,
-      icon: '🛡️',
-      title: 'Teeth Protection',
-      description: 'Protective treatments to prevent damage and maintain optimal oral health.',
-      features: ['Mouthguards', 'Night Guards', 'Fluoride Varnish', 'Dental Sealants']
-    },
-    {
-      id: 9,
-      icon: '📏',
-      title: 'Alignment',
-      description: 'Advanced alignment solutions for straighter teeth and improved bite function.',
-      features: ['Invisalign', 'Clear Aligners', 'Orthodontics', 'Bite Adjustment']
+      icon: '🦷',
+      title: 'Braces',
+      description: 'Clear, metal, and ceramic braces tailored to suit your comfort, lifestyle, and alignment goals.',
+      features: ['Clear Braces', 'Metal Braces', 'Ceramic Options', 'Custom Treatment']
     }
   ];
 
@@ -89,10 +82,9 @@ const ServicesPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className={styles.heroTitle}>Our Comprehensive Services</h1>
+            <h1 className={styles.heroTitle}>Everything Your Smile Needs, in One Place</h1>
             <p className={styles.heroDescription}>
-              We offer a wide range of dental services to address all of your oral health needs. 
-              From routine cleanings to advanced procedures, our expert team is here to help.
+              Dentovate offers comprehensive dental care in one convenient location. From routine treatments to advanced procedures, our services are designed to keep your smile healthy, comfortable and confident at every stage of life.
             </p>
           </motion.div>
         </div>
