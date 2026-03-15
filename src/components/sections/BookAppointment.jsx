@@ -130,10 +130,10 @@ const BookAppointment = () => {
                     required
                   >
                     <option value="">Choose a dentist</option>
-                    <option value="tom-johnson">Dr.G.Vishwateja Rao</option>
-                    <option value="maria-lubin">Dr.P.Pooja Shanker</option>
-                    <option value="corey-dokidis">Dr.Nishitha</option>
-                    <option value="aspen-saris">Dr.B.Yamini Chandra</option>
+                    <option value="Dr.G.Vishwateja Rao">Dr.G.Vishwateja Rao</option>
+                    <option value="Dr.P.Pooja Shanker">Dr.P.Pooja Shanker</option>
+                    <option value="Dr.Nishitha">Dr.Nishitha</option>
+                    <option value="Dr.B.Yamini Chandra">Dr.B.Yamini Chandra</option>
                   </select>
                 </div>
               </div>
