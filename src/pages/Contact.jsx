@@ -197,10 +197,10 @@ const Contact = () => {
                       required
                     >
                       <option value="">Choose a dentist</option>
-                      <option value="tom-johnson">Tom Johnson</option>
-                      <option value="maria-lubin">Maria Lubin</option>
-                      <option value="corey-dokidis">Corey Dokidis</option>
-                      <option value="aspen-saris">Aspen Saris</option>
+                      <option value="dr-vishwa">Dr. G. Vishwa Teja Rao</option>
+                      <option value="dr-nishitha">Dr. Nishitha</option>
+                      <option value="dr-pooja">Dr. Pooja Shanker</option>
+                      <option value="dr-yamini">Dr. B. Yamini Chandra</option>
                     </select>
                   </div>
                 </div>

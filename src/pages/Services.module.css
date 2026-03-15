@@ -52,6 +52,163 @@
   border-color: var(--color-primary);
 }
 
+/* Flip Card Styles */
+.flipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.flipCardFront {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flipCardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flipCardFront::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.flipCardTitle {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  padding: 0 1.5rem 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.flipCardBack {
+  background: linear-gradient(135deg, #1A2B3C 0%, #2d4a5e 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transform: rotateY(180deg);
+}
+
+.flipCardBack .flipCardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.flipCardDescription {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.flipCardBack .iconCircle {
+  width: 60px;
+  height: 60px;
+  background: #CCFF00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.flipCardBack .iconCircle svg {
+  color: #1A2B3C;
+}
+
+.flipCardBack .featureList {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flipCardBack .featureList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.flipCardBack .featureList svg {
+  color: #CCFF00;
+  flex-shrink: 0;
+}
+
+.flipCardBack .learnMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #555555;
+  color: #CCFF00;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all var(--transition-base);
+  margin-top: auto;
+}
+
+.flipCardBack .learnMoreBtn:hover {
+  background: #4a4a4a;
+  color: #CCFF00;
+  transform: translateY(-2px);
+  gap: 0.75rem;
+}
+
 .iconCircle {
   width: 80px;
   height: 80px;
@@ -135,15 +292,43 @@
 }
 
 .cta {
-  padding: 8rem 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #1A2B3C 0%, #2d4258 100%);
   color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(204, 255, 0, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(204, 255, 0, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .ctaContent {
   max-width: 700px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .ctaTitle {
@@ -151,47 +336,60 @@
   margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: -0.5px;
+  font-size: 2.5rem;
 }
 
 .ctaDescription {
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
 .ctaButton {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 3rem;
-  background: #555555;
-  color: #CCFF00;
+  padding: 1rem 2.5rem;
+  background: #CCFF00;
+  color: #1A2B3C;
   border-radius: var(--radius-full);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: all var(--transition-base);
-  box-shadow: 0 8px 24px rgba(85, 85, 85, 0.4);
+  box-shadow: 0 4px 20px rgba(204, 255, 0, 0.3);
   letter-spacing: 0.3px;
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(85, 85, 85, 0.4);
+  box-shadow: 0 8px 30px rgba(204, 255, 0, 0.4);
   gap: 1rem;
-  background: #4a4a4a;
+  background: #b3e600;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .hero,
-  .servicesSection,
+  .servicesSection {
+    padding: 5rem 0;
+  }
+
   .cta {
     padding: 5rem 0;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
   }
 
   .servicesGrid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+  }
+
+  .flipCard {
+    height: 400px;
   }
 }
 
@@ -202,7 +400,10 @@
   }
 
   .hero,
-  .servicesSection,
+  .servicesSection {
+    padding: 4rem 0;
+  }
+
   .cta {
     padding: 4rem 0;
   }
@@ -216,8 +417,43 @@
     padding: 2rem;
   }
 
+  .ctaTitle {
+    font-size: 1.75rem;
+  }
+
+  .ctaDescription {
+    font-size: 1rem;
+  }
+
   .ctaButton {
     width: 100%;
     justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  .flipCard {
+    height: 380px;
+  }
+
+  .flipCardFront,
+  .flipCardBack {
+    padding: 1rem;
+  }
+
+  .flipCardTitle {
+    font-size: 1.25rem;
+    padding: 0 1rem 1rem;
+  }
+
+  .flipCardBack .flipCardTitle {
+    font-size: 1.25rem;
+  }
+
+  .flipCardDescription {
+    font-size: 0.875rem;
+  }
+
+  .flipCardBack .featureList li {
+    font-size: 0.8rem;
   }
 }

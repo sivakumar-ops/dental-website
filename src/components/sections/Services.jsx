@@ -21,7 +21,7 @@ const Services = () => {
       ),
       title: 'Oral Surgery',
       description: 'Safe surgical and simple extractions, including cystic enucleation, performed with precision and patient comfort in focus.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca128c8e27e93e7826b606_Rectangle%209%20(1).jpg',
+      image: '/services/1.jpeg',
       link: '/our-services'
     },
     {
@@ -35,7 +35,7 @@ const Services = () => {
       ),
       title: 'Root Canal Treatment',
       description: 'Gentle, precise procedures that relieve pain, eliminate infection, and preserve your natural tooth structure.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca12965e259ddd4b1fedfa_Rectangle%2011%20(1).jpg',
+      image: '/services/2.jpg',
       link: '/our-services'
     },
     {
@@ -49,7 +49,7 @@ const Services = () => {
       ),
       title: 'Pediatric Dental Care',
       description: 'Friendly, preventive care for children, focused on healthy development and positive dental experiences.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca12965e259ddd4b1fedfa_Rectangle%2011%20(1).jpg',
+      image: '/services/3.png',
       link: '/our-services'
     },
     {
@@ -63,7 +63,7 @@ const Services = () => {
       ),
       title: 'Dental Implants',
       description: 'Conventional and immediate-loading implants designed to restore function, aesthetics, and long-term oral stability.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64aeadb9136790cbb09e7d2c_Cosmetic%20Dentistry.jpg',
+      image: '/services/4.png',
       link: '/our-services'
     },
     {
@@ -77,7 +77,7 @@ const Services = () => {
       ),
       title: 'Aesthetic Dentistry',
       description: 'Subtle cosmetic treatments that enhance your smile while preserving a natural, balanced appearance.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64aeadb9136790cbb09e7d2c_Cosmetic%20Dentistry.jpg',
+      image: '/services/5.jpg',
       link: '/our-services'
     },
     {
@@ -92,7 +92,7 @@ const Services = () => {
       ),
       title: 'Crowns & Bridges',
       description: 'Durable, well-fitted restorations that improve strength, alignment, and smile harmony.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca12965e259ddd4b1fedfa_Rectangle%2011%20(1).jpg',
+      image: '/services/6.png',
       link: '/our-services'
     },
     {
@@ -106,7 +106,7 @@ const Services = () => {
       ),
       title: 'Tooth Whitening',
       description: 'Professional whitening solutions that safely brighten your smile without damaging enamel.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca12965e259ddd4b1fedfa_Rectangle%2011%20(1).jpg',
+      image: '/services/7.png',
       link: '/our-services'
     },
     {
@@ -123,7 +123,24 @@ const Services = () => {
       ),
       title: 'Braces',
       description: 'Clear, metal, and ceramic braces tailored to suit your comfort, lifestyle, and alignment goals.',
-      image: 'https://cdn.prod.website-files.com/64abad8fc8dff88b9569d4f3/64ca128c8e27e93e7826b606_Rectangle%209%20(1).jpg',
+      image: '/services/8.jpg',
+      link: '/our-services'
+    },
+    {
+      id: 9,
+      number: '09',
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="8" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+          <path d="M7 8V6C7 4.9 7.9 4 9 4H15C16.1 4 17 4.9 17 6V8" stroke="currentColor" strokeWidth="2"/>
+          <path d="M3 14H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="9" cy="14" r="1" fill="currentColor"/>
+          <circle cx="15" cy="14" r="1" fill="currentColor"/>
+        </svg>
+      ),
+      title: 'Aligners',
+      description: 'Dental aligners are clear, removable, and customized plastic trays designed to straighten teeth comfortably without metal wires or brackets, acting as a discreet alternative to braces',
+      image: '/services/4a.jpg',
       link: '/our-services'
     }
   ];
@@ -178,32 +195,35 @@ const Services = () => {
           {services.map((service) => (
             <motion.article
               key={service.id}
-              className={styles.serviceCard}
+              className={styles.flipCard}
               variants={itemVariants}
             >
-              <div className={styles.serviceContent}>
-                <span className={styles.serviceIcon}>{service.icon}</span>
-                <span className={styles.serviceNumber}>{service.number}</span>
-                <h3 className={styles.serviceTitle}>
-                  <Link to={service.link}>{service.title}</Link>
-                </h3>
-                <p className={styles.serviceDescription}>{service.description}</p>
-                <Link to={service.link} className={styles.learnMoreLink}>
-                  Learn More
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </Link>
-              </div>
-              <div className={styles.serviceImageWrapper}>
-                <img
-                  src={service.image}
-                  alt=""
-                  className={styles.serviceImage}
-                  loading="lazy"
-                  aria-hidden="true"
-                />
-                <div className={styles.imageOverlay}></div>
+              <div className={styles.flipCardInner}>
+                <div className={styles.flipCardFront}>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className={styles.flipCardImage}
+                    loading="lazy"
+                  />
+                  <span className={styles.serviceNumber}>{service.number}</span>
+                  <h3 className={styles.flipCardTitle}>
+                    <Link to={service.link}>{service.title}</Link>
+                  </h3>
+                </div>
+                <div className={styles.flipCardBack}>
+                  <span className={styles.serviceIcon}>{service.icon}</span>
+                  <h3 className={styles.flipCardTitle}>
+                    <Link to={service.link}>{service.title}</Link>
+                  </h3>
+                  <p className={styles.flipCardDescription}>{service.description}</p>
+                  <Link to={service.link} className={styles.learnMoreLink}>
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </motion.article>
           ))}

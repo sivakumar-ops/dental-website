@@ -68,35 +68,44 @@
 .infoIcon {
   width: 56px;
   height: 56px;
-  background: var(--color-primary-light);
+  background: #f0f0f0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: #555555;
   flex-shrink: 0;
+  transition: all var(--transition-base);
+}
+
+.infoItem:hover .infoIcon {
+  background: #1A2B3C;
+  color: #CCFF00;
 }
 
 .infoItem h3 {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
   color: var(--color-text-dark);
+  font-weight: 700;
 }
 
 .infoItem a {
-  color: var(--color-primary);
-  font-weight: 500;
+  color: #1A2B3C;
+  font-weight: 600;
   transition: color var(--transition-fast);
+  font-size: 1rem;
 }
 
 .infoItem a:hover {
-  color: var(--color-primary-dark);
+  color: #555555;
 }
 
 .infoItem p {
   font-size: 0.95rem;
   color: var(--color-text-light);
   margin: 0;
+  line-height: 1.6;
 }
 
 .formWrapper {

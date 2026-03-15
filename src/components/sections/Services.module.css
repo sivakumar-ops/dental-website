@@ -196,6 +196,153 @@
   opacity: 1;
 }
 
+/* Flip Card Styles */
+.flipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.flipCardFront {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flipCardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flipCardFront::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.serviceNumber {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: var(--font-display);
+  line-height: 1;
+  z-index: 1;
+}
+
+.flipCardTitle {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  padding: 0 1.5rem 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.flipCardTitle a {
+  color: white;
+  transition: color var(--transition-fast);
+}
+
+.flipCardTitle a:hover {
+  color: #CCFF00;
+}
+
+.flipCardBack {
+  background: linear-gradient(135deg, #1A2B3C 0%, #2d4a5e 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transform: rotateY(180deg);
+}
+
+.flipCardBack .serviceIcon {
+  width: 60px;
+  height: 60px;
+  background: #CCFF00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #1A2B3C;
+}
+
+.flipCardBack .flipCardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.flipCardDescription {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.flipCardBack .learnMoreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #CCFF00;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: gap var(--transition-fast);
+}
+
+.flipCardBack .learnMoreLink:hover {
+  gap: 0.75rem;
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
   .services {
@@ -211,6 +358,10 @@
   .servicesGrid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+  }
+
+  .flipCard {
+    height: 350px;
   }
 }
 
@@ -235,5 +386,22 @@
 
   .serviceImageWrapper {
     height: 220px;
+  }
+
+  .flipCard {
+    height: 320px;
+  }
+
+  .flipCardFront,
+  .flipCardBack {
+    padding: 1rem;
+  }
+
+  .flipCardTitle {
+    font-size: 1.25rem;
+  }
+
+  .flipCardDescription {
+    font-size: 0.875rem;
   }
 }
