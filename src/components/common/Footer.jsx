@@ -103,7 +103,7 @@ const Footer = () => {
                   <path d="M10 6V10L13 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <span>Mon-Sat: 10:00 AM - 8:00 PM</span>
-                <span>Sunday: 10:00 AM - 1:00 PM</span>
+                <span>Sun: 10:00 AM - 1:00 PM</span>
               </li>
             </ul>
           </div>
