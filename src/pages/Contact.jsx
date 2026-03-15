@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Phone</h3>
-                    <a href="tel:5005555050">9133333552</a>
+                    <a href="tel:9133333552">9133333552</a>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Email</h3>
-                    <a href="mailto:info@dentovate.com">info@dentovate.com</a>
+                    <a href="mailto:dentovatedental@gmail.com">dentovatedental@gmail.com</a>
                   </div>
                 </div>
 
@@ -131,7 +131,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3>Working Hours</h3>
-                    <p>Mon-Fri: 9:00 AM - 6:00 PM<br />Sat: 9:00 AM - 2:00 PM</p>
+                    <p>Mon-Sat: 10:00 AM - 8:00 PM<br />Sun: 10:00 AM - 1:00 PM</p>
                   </div>
                 </div>
               </div>
