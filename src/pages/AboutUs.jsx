@@ -142,7 +142,7 @@ const AboutUs = () => {
       </section>
 
       {/* Stats Section */}
-      <section className={styles.stats}>
+      {/* <section className={styles.stats}>
         <div className="container">
           <div className={styles.statsGrid}>
             <motion.div
@@ -190,7 +190,7 @@ const AboutUs = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
